@@ -5,4 +5,5 @@ url-thumbnail: "http://static.libsyn.com/p/assets/2/f/7/8/2f78fe119d0dd2cc/bcs-1
 url-rss:       "http://feeds.feedburner.com/TheBryanCallenShow"
 url-web:       "http://bryancallen.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/the-bryan-callen-show/id552184090?mt=2&uo=4"
+tags:         [four,dog,cat,bear]
 ---

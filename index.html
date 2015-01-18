@@ -2,12 +2,34 @@
 layout: default
 ---
 
+
+
+{% assign all_tags=[] %}       
+{% for podcast in podcasts %}  
+  {% for tag in podcast.tags %}
+    {{ all_tags | push: tag }} 
+  {% endfor %}
+{% endfor %}
+ 
+{% for tag in all_tags %}
+  {{ tag }} --
+{% endfor %}
+
+
+
 <ul style="margin-left: 0; position: relative;">
 {% for podcast in site.podcasts %}
   <li style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
     <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
-    <h2 style="margin: 0; font-weight: bold;">{{ podcast.title }}</h2>
-    <p style="margin: 0;">{{ podcast.description }}</p>
+    <h2 style="margin: 0 0 4px 0; font-weight: bold;">{{ podcast.title }}</h2>
+    <p style="margin: 0 0 8px 0;">{{ podcast.description }}</p>
+    {% if podcast.tags %}
+    <ul style="margin-left: 0; margin-bottom: 8px;">
+      {% for tag in podcast.tags %}
+        <li style="font-size: 12px; list-style: none; background: #ddd; color: #888; margin: 0 2px 0 0; padding: 5px 8px; display: inline;">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
     <p><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>        
   </li>
 {% endfor %}
