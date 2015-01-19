@@ -2,31 +2,30 @@
 layout: default
 ---
 
+<style>
+  .tag-list ul { margin: 0 0 8px 0; overflow: hidden; width: auto; }
+  .tag-list ul li { list-style: none; display: inline-block; float: left; margin: 0 4px 4px 0; }
+  .tag-list ul li a { padding: 5px 8px; font-size: 12px; color: #888; background: #ddd; display: block; }
+  .tag-list ul li.active a { background: blue; color: #fff; }
+</style>
 
-
-{% assign all_tags=[] %}       
-{% for podcast in podcasts %}  
-  {% for tag in podcast.tags %}
-    {{ all_tags | push: tag }} 
-  {% endfor %}
-{% endfor %}
- 
-{% for tag in all_tags %}
-  {{ tag }} --
-{% endfor %}
-
-
+<div class="tag-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee;">
+  <h3 style="font-weight: bold; margin: 0 0 8px 0;">Filter:</h3>
+  <ul>
+    <li class="active"><a href="#">show all</a></li>
+  </ul>
+</div>
 
 <ul style="margin-left: 0; position: relative;">
 {% for podcast in site.podcasts %}
-  <li style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
+  <li class="item" data-tags="{{ podcast.tags | join: ' ' }}" style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
     <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
     <h2 style="margin: 0 0 4px 0; font-weight: bold;">{{ podcast.title }}</h2>
     <p style="margin: 0 0 8px 0;">{{ podcast.description }}</p>
     {% if podcast.tags %}
     <ul style="margin-left: 0; margin-bottom: 8px;">
       {% for tag in podcast.tags %}
-        <li style="font-size: 12px; list-style: none; background: #ddd; color: #888; margin: 0 2px 0 0; padding: 5px 8px; display: inline;">{{ tag }}</li>
+        <li class="item__tag" style="font-size: 12px; list-style: none; background: #ddd; color: #888; margin: 0 2px 0 0; padding: 5px 8px; display: inline;">{{ tag }}</li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -34,3 +33,20 @@ layout: default
   </li>
 {% endfor %}
 </ul>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var tagList = [];
+  $.each( $('.item__tag'), function(i,obj) { 
+    nextTag = obj.innerText;
+    if ($.inArray(nextTag,tagList) == -1) {
+      tagList.push( nextTag );
+    }
+  } );
+  tagList = tagList.sort();
+  
+  $.each( $(tagList), function(i,obj) { 
+    $('.tag-list ul').append('<li><a href="#">' + obj + '</a></li>');
+  } );
+  
+</script>

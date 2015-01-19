@@ -5,4 +5,5 @@ url-thumbnail: "http://static.libsyn.com/p/assets/d/5/3/b/d53b7d1fc184b1e3/night
 url-rss:       "http://nightvale.libsyn.com/rss"
 url-web:       "http://welcometonightvale.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/welcome-to-night-vale/id536258179?mt=2&uo=4"
+tags:         [comedy, fringe]
 ---

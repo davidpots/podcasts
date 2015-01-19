@@ -5,4 +5,5 @@ url-thumbnail: "http://a3.mzstatic.com/us/r30/Podcasts4/v4/1a/bb/e3/1abbe34c-d6e
 url-rss:       "http://feeds.feedburner.com/DormRoomTycoon"
 url-web:       "http://drt.fm/"
 url-itunes:    "https://itunes.apple.com/us/podcast/dorm-room-tycoon/id355125543?mt=2&uo=4"
+tags:         [design, development, interview, tech]
 ---

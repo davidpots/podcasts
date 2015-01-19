@@ -5,4 +5,5 @@ url-thumbnail: "http://twit.cachefly.net/coverart/tri/tri1400audio.jpg"
 url-rss:       "http://leo.am/podcasts/tri.xml"
 url-web:       "http://twit.tv/tri"
 url-itunes:    "https://itunes.apple.com/us/podcast/triangulation-mp3/id415842414?mt=2&uo=4"
+tags:         [history, interview, society and culture, tech]
 ---

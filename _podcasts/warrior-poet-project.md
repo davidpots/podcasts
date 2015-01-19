@@ -5,4 +5,5 @@ url-thumbnail: "http://static.libsyn.com/p/assets/b/8/7/b/b87ba20e5be6d634/aub-2
 url-rss:       "http://warriorpoet.libsyn.com/rss"
 url-web:       "http://www.warriorpoet.us/"
 url-itunes:    "https://itunes.apple.com/us/podcast/warrior-poet-project/id521945322?mt=2&uo=4"
+tags:         [interview, society and culture, spirituality]
 ---

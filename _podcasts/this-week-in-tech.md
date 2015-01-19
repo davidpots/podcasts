@@ -5,4 +5,5 @@ url-thumbnail: "http://twit.cachefly.net/coverart/twit/twit1400audio.jpg"
 url-rss:       "http://leoville.tv/podcasts/twit.xml"
 url-web:       "http://twit.tv/twit"
 url-itunes:    "https://itunes.apple.com/us/podcast/this-week-in-tech-mp3/id73329404?mt=2&uo=4"
+tags:         [news, society and culture, tech]
 ---

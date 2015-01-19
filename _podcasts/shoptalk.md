@@ -5,4 +5,5 @@ url-thumbnail: "http://stscdn.paravel.netdna-cdn.com/wp-content/uploads/2012/08/
 url-rss:       "http://shoptalkshow.com/feed/podcast"
 url-web:       "http://shoptalkshow.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/shoptalk/id493890455?mt=2&uo=4"
+tags:         [design, development, interview, tech]
 ---

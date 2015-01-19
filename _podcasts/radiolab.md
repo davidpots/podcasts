@@ -5,4 +5,5 @@ url-thumbnail: "http://www.wnyc.org/i/raw/1/Radiolab_1.png"
 url-rss:       "http://feeds.wnyc.org/radiolab"
 url-web:       "http://www.radiolab.org/series/podcasts/"
 url-itunes:    "https://itunes.apple.com/us/podcast/radiolab-from-wnyc/id152249110?mt=2&uo=4"
+tags:         [fringe, society and culture]
 ---

@@ -5,4 +5,5 @@ url-thumbnail: "http://www.onbeing.org/sites/default/files/ONBE_Isolated-Master-
 url-rss:       "http://www.onbeing.org/podcasts/podcast.xml"
 url-web:       "http://onbeing.org/"
 url-itunes:    "https://itunes.apple.com/us/podcast/on-being/id150892556?mt=2&uo=4"
+tags:         [interview, spirituality, society and culture]
 ---

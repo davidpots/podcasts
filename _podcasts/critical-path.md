@@ -5,4 +5,5 @@ url-thumbnail: "http://icebox.5by5.tv/images/broadcasts/24/cover.jpg"
 url-rss:       "http://feeds.5by5.tv/criticalpath"
 url-web:       "http://5by5.tv/criticalpath"
 url-itunes:    "https://itunes.apple.com/us/podcast/the-critical-path/id442816705?mt=2&uo=4"
+tags:         [apple, tech, history]
 ---

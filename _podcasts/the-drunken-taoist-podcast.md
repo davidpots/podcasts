@@ -5,4 +5,5 @@ url-thumbnail: "http://thedrunkentaoist.com/static/tdt/img/logo-large.jpg"
 url-rss:       "http://feeds.feedburner.com/TheDrunkenTaoistPodcast"
 url-web:       "http://thedrunkentaoist.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/the-drunken-taoist-podcast/id567232410?mt=2&uo=4"
+tags:         [comedy, history, spirituality]
 ---

@@ -5,5 +5,5 @@ url-thumbnail: "http://static1.squarespace.com/static/513abd71e4b0fe58c655c105/t
 url-rss:       "http://atp.fm/episodes?format=rss"
 url-web:       "http://atp.fm/"
 url-itunes:    "https://itunes.apple.com/us/podcast/accidental-tech-podcast/id617416468"
-tags:         [one,two,three,four]
+tags:         [apple, development, tech]
 ---

@@ -5,4 +5,5 @@ url-thumbnail: "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/bs_repor
 url-rss:       "http://sports.espn.go.com/espnradio/podcast/feeds/itunes/podCast?id=2864045"
 url-web:       "http://sports.espn.go.com/espnradio/podcast/index"
 url-itunes:    "https://itunes.apple.com/us/podcast/espn-b.s.-report-bill-simmons/id254098743?mt=2&uo=4"
+tags:         [sports, interview, society and culture]
 ---
