@@ -5,5 +5,5 @@ url-thumbnail: "http://serialpodcast.org/sites/all/modules/custom/serial/img/ser
 url-rss:       "http://feeds.serialpodcast.org/serialpodcast"
 url-web:       "http://serialpodcast.org/"
 url-itunes:    "https://itunes.apple.com/us/podcast/serial/id917918570?mt=2&uo=4"
-tags:         [society and culture]
+tags:         [culture]
 ---

@@ -12,20 +12,20 @@ layout: default
 <div class="tag-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee;">
   <h3 style="font-weight: bold; margin: 0 0 8px 0;">Filter:</h3>
   <ul>
-    <li class="active"><a href="#">show all</a></li>
+    <li class="active"><a class="show-all" href="#">show all</a></li>
   </ul>
 </div>
 
-<ul style="margin-left: 0; position: relative;">
+<ul id="container" style="margin-left: 0; position: relative;">
 {% for podcast in site.podcasts %}
-  <li class="item" data-tags="{{ podcast.tags | join: ' ' }}" style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
+  <li class="item {{ podcast.tags | join: ' ' }}" data-tags="" style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
     <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
     <h2 style="margin: 0 0 4px 0; font-weight: bold;">{{ podcast.title }}</h2>
     <p style="margin: 0 0 8px 0;">{{ podcast.description }}</p>
     {% if podcast.tags %}
-    <ul style="margin-left: 0; margin-bottom: 8px;">
+    <ul style="margin-left: 0; margin-bottom: 8px; overflow: hidden;">
       {% for tag in podcast.tags %}
-        <li class="item__tag" style="font-size: 12px; list-style: none; background: #ddd; color: #888; margin: 0 2px 0 0; padding: 5px 8px; display: inline;">{{ tag }}</li>
+        <li class="item__tag" style="list-style: none; float: left; font-size: 12px; border: 1px solid #ddd; color: #888; margin: 0 2px 0 0; padding: 5px 8px; display: block;">{{ tag }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -35,18 +35,51 @@ layout: default
 </ul>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="/podcasts/javascript/isotope.js"></script>
 <script type="text/javascript">
-  var tagList = [];
-  $.each( $('.item__tag'), function(i,obj) { 
-    nextTag = obj.innerText;
-    if ($.inArray(nextTag,tagList) == -1) {
-      tagList.push( nextTag );
-    }
-  } );
-  tagList = tagList.sort();
+
+  $(document).ready(function(){
+
+    var tagList = [];
+    $.each( $('.item__tag'), function(i,obj) { 
+      nextTag = obj.innerText;
+      if ($.inArray(nextTag,tagList) == -1) {
+        tagList.push( nextTag );
+      }
+    } );
+    tagList = tagList.sort();
+    
+    $.each( $(tagList), function(i,obj) { 
+      $('.tag-list ul').append('<li><a class="item__tag" data-filter="' + obj + '" href="#">' + obj + '</a></li>');
+    } );
   
-  $.each( $(tagList), function(i,obj) { 
-    $('.tag-list ul').append('<li><a href="#">' + obj + '</a></li>');
-  } );
+    var $container = $('#container');
+    // init
+    $container.isotope({
+      // options
+      itemSelector: '.item',
+      layoutMode: 'vertical'
+    });
+    
+    $('.tag-list ul .item__tag').click(function(){
+
+      var filterBy = '.' + $(this).data('filter');
+      $container.isotope({ filter: filterBy });
+
+      $('.tag-list ul li.active').removeClass('active');
+      
+      $(this).parent().addClass('active');
+
+      return false;
+    });
+
+    $('.show-all').click(function(){
+      $container.isotope({ filter: '*' });
+      $('.tag-list ul li.active').removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    
+
+  });
   
 </script>

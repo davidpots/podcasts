@@ -5,5 +5,5 @@ url-thumbnail: "http://www.dancarlin.com/graphics/DC_HH_iTunes.jpg"
 url-rss:       "http://feeds.feedburner.com/dancarlin/history?format=xml"
 url-web:       "http://www.dancarlin.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/dan-carlins-hardcore-history/id173001861?mt=2&uo=4"
-tags:         [history, society and culture]
+tags:         [history, culture]
 ---

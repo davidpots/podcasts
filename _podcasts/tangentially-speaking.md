@@ -5,5 +5,5 @@ url-thumbnail: "http://static.libsyn.com/p/assets/b/0/8/e/b08ee47c18c371a7/drchr
 url-rss:       "http://tangent.libsyn.com/rss"
 url-web:       "http://chrisryanphd.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/tangentially-speaking-dr./id566908883?mt=2&uo=4"
-tags:         [history, interview, society and culture]
+tags:         [history, interview, culture]
 ---

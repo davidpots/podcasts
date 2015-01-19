@@ -5,5 +5,5 @@ url-thumbnail: "http://www.theincomparable.com/imgs/design/logo-theincomparable.
 url-rss:       "http://feeds.theincomparable.com/theincomparable"
 url-web:       "http://www.theincomparable.com/theincomparable"
 url-itunes:    "https://itunes.apple.com/us/podcast/the-incomparable/id388887532?mt=2&uo=4"
-tags:         [movies, society and culture]
+tags:         [movies, culture]
 ---

@@ -5,5 +5,5 @@ url-thumbnail: "http://static.libsyn.com/p/assets/5/a/8/7/5a87e01004b980c1/TimFe
 url-rss:       "http://feeds.feedburner.com/thetimferrissshow"
 url-web:       "http://www.fourhourblog.com/"
 url-itunes:    "https://itunes.apple.com/us/podcast/the-tim-ferriss-show/id863897795?mt=2&uo=4"
-tags:         [interview, society and culture]
+tags:         [interview, culture]
 ---
