@@ -1,0 +1,33 @@
+---
+- title:         "99% Invisible"
+  description:   "A Tiny Radio Show about Design with Roman Mars"
+  url-thumbnail: "http://cdn.99percentinvisible.org/wp-content/uploads/powerpress/99invisible-logo-1400.jpg"
+  url-rss:       "http://feeds.99percentinvisible.org/99percentinvisible"
+  url-web:       "http://99percentinvisible.prx.org/"
+  url-itunes:    "https://itunes.apple.com/us/podcast/99-invisible/id394775318?mt=2&uo=4"
+  tags:          [culture,design]
+
+- title:         "Accidental Tech Podcast"
+  description:   "A tech podcast we accidentally created while trying to do a car show. Featuring Marco Arment, Casey Liss, and John Siracusa."
+  url-thumbnail: "http://static1.squarespace.com/static/513abd71e4b0fe58c655c105/t/52c45a37e4b0a77a5034aa84/1388599866232/1500w/Artwork.jpg"
+  url-rss:       "http://atp.fm/episodes?format=rss"
+  url-web:       "http://atp.fm/"
+  url-itunes:    "https://itunes.apple.com/us/podcast/accidental-tech-podcast/id617416468"
+  tags:          [apple, development, tech]
+
+- title:         "All Songs Considered"
+  description:   "Host Bob Boilen spins new music from emerging bands and musical icons."
+  url-thumbnail: "http://media.npr.org/images/podcasts/primary/icon_510019.jpg"
+  url-rss:       "http://www.npr.org/rss/rss.php?id=163479981"
+  url-web:       "http://www.npr.org/blogs/allsongs/"
+  url-itunes:    "https://itunes.apple.com/us/podcast/npr-all-songs-considered-podcast/id79687345?mt=2&uo=4"
+  tags:          [music]
+
+- title:         "The Bryan Callen Show"
+  description:   "The Bryan Callen Show is a one-on-one, one-hour interview, featuring an array of different personalities, from celebrities to authors, producers, film makers, directors and other accomplished individuals. We discuss a variety of topics, focusing on perspective and experience."
+  url-thumbnail: "http://static.libsyn.com/p/assets/2/f/7/8/2f78fe119d0dd2cc/bcs-1400.jpg"
+  url-rss:       "http://feeds.feedburner.com/TheBryanCallenShow"
+  url-web:       "http://bryancallen.com/"
+  url-itunes:    "https://itunes.apple.com/us/podcast/the-bryan-callen-show/id552184090?mt=2&uo=4"
+  tags:          [comedy, history, interview, culture]
+---
