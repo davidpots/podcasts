@@ -1,0 +1,25 @@
+---
+layout: page
+title: Episodes
+permalink: /episodes/
+---
+
+{% for episode in site.episodes reversed %}
+
+  {% assign podcast_data = site.data.podcasts | where:"title", episode.podcast %}
+  {% assign podcast = podcast_data | first %}
+
+  <div style="padding-left: 96px; position: relative; margin: 0 0 64px 0;">
+    <img style="position: absolute; left: 0; width: 80px; margin: 0 8px 0 0;" src="{{ podcast.url-thumbnail }}" width="80" />
+    <p style="font-size: 14px; color: #aaa; margin: 0 0 8px 0;">{{ episode.date | date: '%B %d, %Y' }}</p>
+    <h2 style="line-height: 1.2; font-weight: bold; margin: 0 0 10px 0;">{{ episode.title }}</h2>
+    <p style="margin-bottom: 8px;">{{ episode.summary }}</p>
+    <p style="margin: 0 0 8px 0; font-size: 14px; color: #aaa;">as heard on <a style="color: #aaa; text-decoration: underline;" href="{{podcast.url-web}}">{{ podcast.title }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="color: #aaa; text-decoration: underline;" href="{{ episode.url-audio }}">Download MP3</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="color: #aaa; text-decoration: underline;" href="{{ episode.url-web }}">Episode website</a></p>
+    <audio style="margin: 5px 0;" controls>
+      <source src="{{ episode.url-audio }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <!-- <p><a href="{{ podcast.url-web }}">Website</a> | <a href="{{ podcast.url-itunes }}">iTunes</a>| <a href="{{ podcast.url-rss }}">RSS</a></p> -->
+  </div>
+
+{% endfor %}

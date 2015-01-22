@@ -1,0 +1,11 @@
+---
+podcast:       "yyyy-mm-dd"
+podcast:       "___________"
+title:         "___________"
+summary:       "___________"
+url-audio:     "___________"
+url-web:       "___________"
+---
+
+{% assign podcast_data = site.data.podcasts | where:"title", page.podcast_title %}
+{% assign podcast = podcast_data | first %}
