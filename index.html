@@ -1,25 +1,17 @@
 ---
 layout: default
+title: Podcasts
 ---
 
-<style>
-  .tag-list ul { margin: 0 0 8px 0; overflow: hidden; width: auto; display: none; }
-  .tag-list ul li { list-style: none; display: inline-block; float: left; margin: 0 4px 4px 0; }
-  .tag-list ul li a { padding: 5px 8px; font-size: 12px; color: #888; background: #ddd; display: block; }
-  .tag-list ul li.active a { background: blue; color: #fff; }
-</style>
-
-<h1 style="font-weight: bold;">@davidpots' favorite podcasts</h1>
-
 <div class="tag-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee;">
-  <h3 style="font-weight: bold; margin: 0 0 8px 0;">Filter:</h3>
+  <h4 style="font-weight: bold; margin: 0 0 8px 0; display:">Filter by category:</h3>
   <ul>
     <li class="active"><a class="show-all item__tag" href="#">show all</a></li>
   </ul>
 </div>
 
 <ul id="container" style="margin-left: 0; position: relative;">
-{% for podcast in site.podcasts %}
+{% for podcast in site.data.podcasts %}
   <li class="item" data-tags="{{ podcast.tags | join: ' ' }}" style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
     <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
     <h2 style="margin: 0 0 4px 0; font-weight: bold;">{{ podcast.title }}</h2>

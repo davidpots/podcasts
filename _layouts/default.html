@@ -9,6 +9,13 @@
 
     <div class="page-content">
       <div class="wrapper">
+
+        <ul class="nav-tabs">
+          <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="/podcasts/">Podcasts</a></li>
+          <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
+          <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="/podcasts/episodes">Fav. Episodes</a></li>
+        </ul>
+        
         {{ content }}
       </div>
     </div>
