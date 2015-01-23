@@ -18,3 +18,11 @@ collections:
     output: true
   episodes:
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "podcasts" # a collection in your site, in plural form
+    values:
+      layout: "podcast"
