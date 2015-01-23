@@ -6,7 +6,7 @@ permalink: /episodes/
 
 {% for episode in site.episodes reversed %}
 
-  {% assign podcast_data = site.data.podcasts | where:"title", episode.podcast %}
+  {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
   {% assign podcast = podcast_data | first %}
 
   <div style="padding-left: 96px; position: relative; margin: 0 0 64px 0;">
