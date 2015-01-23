@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+
+<h3>I am the 'podcast' layout file</h3>
+
 <h1>{{page.title}}</h1>
 
 <p>{{page.description}}</p>
+
+<hr />
+
+
+{% assign episodes = site.episodes | where:"podcast", page.title %}
+
+{% for episode in episodes reversed %}
+  <p>Episode: {{ episode.title }}</p>
+{% endfor %}
