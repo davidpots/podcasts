@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<h3>I am the 'podcast' layout file</h3>
-
 <h1>{{page.title}}</h1>
 
 <p>{{page.description}}</p>
 
 <hr />
+<br />
 
+<p><em>This will be the deciated page for this show. It will also include any & all episodes of this show I have curated. In the future, I'll probably explore ways to parse the RSS feed of this podcast, showing all available episodes. All this to figure out later.</em></p>
 
 {% assign episodes = site.episodes | where:"podcast", page.title %}
 
