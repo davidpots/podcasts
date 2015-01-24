@@ -22,7 +22,12 @@
 
         <item>
           <title>{{ episode.title }}</title>
-          <description>{{ episode.summary }}</description>
+          <description>
+            <![CDATA[
+              <p><em>As heard on <a href="{{ podcast.url }}">{{ podcast.title }}</a></em>.</p>
+              <p>{{ episode.summary }}</p>
+            ]]>
+          </description>
           <guid>{{ episode.url }}</guid>
           <link>{{ episode.url }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="integer"/>
