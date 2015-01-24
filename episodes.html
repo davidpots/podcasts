@@ -12,7 +12,7 @@ permalink: /episodes/
   <div style="padding-left: 96px; position: relative; margin: 0 0 64px 0;">
     <img style="position: absolute; left: 0; width: 80px; margin: 0 8px 0 0;" src="{{ podcast.url-thumbnail }}" width="80" />
     <p style="font-size: 14px; color: #aaa; margin: 0 0 8px 0;">{{ episode.date | date: '%B %d, %Y' }}</p>
-    <h2 style="line-height: 1.2; font-weight: bold; margin: 0 0 10px 0;">{{ episode.title }}</h2>
+    <h2 style="line-height: 1.2; font-weight: bold; margin: 0 0 10px 0;"><a href="/podcasts{{ episode.url }}">{{ episode.title }}</a></h2>
     <p style="margin-bottom: 8px;">{{ episode.summary }}</p>
     <p style="margin: 0 0 8px 0; font-size: 14px; color: #aaa;">as heard on <a style="color: #aaa; text-decoration: underline;" href="{{podcast.url-web}}">{{ podcast.title }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="color: #aaa; text-decoration: underline;" href="{{ episode.url-audio }}">Download MP3</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="color: #aaa; text-decoration: underline;" href="{{ episode.url-web }}">Episode website</a></p>
     <audio style="margin: 5px 0;" controls>
