@@ -24,7 +24,7 @@
           <title>{{ episode.title }}</title>
           <description>
             <![CDATA[
-              <p><i>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></i>.</p>
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
               <p>{{ episode.summary }}</p>
             ]]>
           </description>
