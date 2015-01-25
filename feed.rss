@@ -31,7 +31,7 @@
           </description>
           <content:encoded>
             <![CDATA[
-              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em></p>
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
               <p>{{ episode.summary }}</p>
             ]]>
           </content:encoded>
