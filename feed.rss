@@ -7,7 +7,7 @@
 
   <channel>
     <title>DavidPots Podcast Picks</title>
-    <description>A feed of recommended episodes, each one hand picked by @DavidPots.</description>
+    <description>A feed of recommended episodes, each one hand-picked by @DavidPots.</description>
 		<image>
 			<title>DavidPots Podcast Picks</title>
 			<link>http://davidpots.com/podcasts/episodes</link>
@@ -38,7 +38,7 @@
           <guid>{{ episode.url }}</guid>
           <link>{{ episode.url }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="integer"/>
-          <pubDate>{{ episode.date | date: '%B %d, %Y' }}</pubDate>
+          <pubDate>{{ episode.date | date: '%a, %d %b %Y %T %Z' }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
           <itunes:subtitle>
             As heard on "{{ podcast.title }}"
