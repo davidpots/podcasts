@@ -25,21 +25,30 @@
         <item>
           <title>{{ episode.title }}</title>
           <description>
+            As heard on "{{ podcast.title }}"
+            
+            {{ episode.summary }}
+          </description>
+          <content:encoded>
             <![CDATA[
-              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em></p>
               <p>{{ episode.summary }}</p>
             ]]>
-          </description>
+          </content:encoded>
           <guid>{{ episode.url }}</guid>
           <link>{{ episode.url }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="integer"/>
           <pubDate>{{ episode.date | date: '%B %d, %Y' }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
           <itunes:subtitle>
-            As heard on "{{ podcast.title }}". {{ episode.summary }}
+            As heard on "{{ podcast.title }}"
+            
+            {{ episode.summary }}
           </itunes:subtitle>
           <itunes:summary>
-            As heard on "{{ podcast.title }}". {{ episode.summary }}
+            As heard on "{{ podcast.title }}"
+            
+            {{ episode.summary }}
           </itunes:summary>
         </item>
 
