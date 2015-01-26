@@ -1,16 +1,15 @@
 ---
-layout: page
-title: Episodes
-permalink: /episodes/
+layout: default
+title: Sandbox
 ---
 
-<ul class="nav-tabs">
-  <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="/podcasts/">Shows</a></li>
-  <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
-  <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="/podcasts/episodes">Episodes</a></li>
-</ul>
-
-<p class="center mhxxxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="http://davidpots.com/podcasts/feed.rss">RSS</a> or <a href="itpc://davidpots.com/podcasts/feed.rss">iTunes</a></p>
+{% for podcast in site.podcasts %}
+  <div class="item" data-tags="{{ podcast.tags | join: ' ' }}" style="background: url({{ podcast.url-thumbnail }}) no-repeat; background-size: 60px; padding-left: 76px;">
+    <h2 class="mbxxs">{{ podcast.title }}</h2>
+    <p class="mbxxs">{{ podcast.description }}</p>
+    <p class="mbxxs"><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>
+  </div>
+{% endfor %}
 
 {% for episode in site.episodes reversed %}
 
