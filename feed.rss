@@ -41,14 +41,14 @@
           <pubDate>{{ episode.date | date: '%a, %d %b %Y %T %Z' }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
           <itunes:subtitle>
-            As heard on "{{ podcast.title }}"
-            
-            {{ episode.summary }}
+As heard on "{{ podcast.title }}"
+
+{{ episode.summary }}
           </itunes:subtitle>
           <itunes:summary>
-            As heard on "{{ podcast.title }}"
-            
-            {{ episode.summary }}
+As heard on "{{ podcast.title }}"
+
+{{ episode.summary }}
           </itunes:summary>
         </item>
 
