@@ -7,18 +7,13 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+      <div class="container--col-8">
 
-        <ul class="nav-tabs">
-          <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="/podcasts/">Podcasts</a></li>
-          <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
-          <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="/podcasts/episodes">Fav. Episodes</a></li>
-        </ul>
+        <h1 class="center">@DavidPots Podcast Picks</h1>
         
         {{ content }}
+
       </div>
-    </div>
 
     {% include footer.html %}
 

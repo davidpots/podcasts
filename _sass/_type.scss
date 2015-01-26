@@ -1,0 +1,102 @@
+//  ----------------------------------------------------------------------------
+//  General
+//  ----------------------------------------------------------------------------
+
+        body {
+          color:       $font-color--default;
+          font-family: $font-family--default;
+          font-size:   $font-size--normal;
+          font-weight: $font-weight--normal;
+          line-height: $line-height--default;
+          -webkit-text-size-adjust: 100%;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+          font-weight:   $font-weight--strong;
+          line-height:   $line-height--heading;
+          margin-top:    $space--large;
+          margin-bottom: $space--large;
+        }
+
+        p,ol,ul,dl,table,hr,pre {
+          margin-top:    0;
+          margin-bottom: $space--large;
+        }
+
+        h1,h2,h3,h4,h5,h6,dt,strong,th {
+          color: $font-color--strong;
+        }
+    
+        hr {
+          border: 0;
+          height: 0;
+          border-top: 1px solid $color--gray-lighter;
+          margin-top: $space--xxxlarge;
+          margin-bottom: $space--xxxlarge;
+        }
+        
+        a {
+          color: $color--link;
+          text-decoration: none;
+        }
+
+//  ----------------------------------------------------------------------------
+//  Size & scale
+//  ----------------------------------------------------------------------------
+
+            .h0 { font-size: $font-size--xxxlarge; }
+        h1, .h1 { font-size: $font-size--xxlarge; }
+        h2, .h2 { font-size: $font-size--xlarge; }
+        h3, .h3 { font-size: $font-size--large; }
+        h4, .h4 { font-size: $font-size--normal; }
+        h5, .h5 { font-size: $font-size--normal; }
+        h6, .h6 { font-size: $font-size--normal; }
+
+        .small    { font-size: $font-size--small; }
+        .smaller  { font-size: $font-size--xsmall; }
+
+//  ----------------------------------------------------------------------------
+//  Lists
+//  ----------------------------------------------------------------------------
+
+        ul, ol {
+          padding-left: $space--xxxlarge;
+        }
+
+//  ----------------------------------------------------------------------------
+//  Monospace & code samples
+//  ----------------------------------------------------------------------------
+
+        pre, code, samp, .mono {
+          background-color: $color--gray-lightest;
+          border-radius: $border--radius;
+          font-family: $font-family--monospace;
+          font-size: $font-size--small;
+        }
+        
+        code {
+          padding: 2px 4px;
+        }
+        
+        pre {
+          padding: $space--large;
+          overflow: auto;
+        }
+
+//  ----------------------------------------------------------------------------
+//  Utility classes
+//  ----------------------------------------------------------------------------
+
+        .strong,
+        .bold           { font-weight: $font-weight--strong; }
+        .weak           { color: $color--gray-lighter; }
+        .normal         { font-weight: $font-weight--normal; }
+        .italic         { font-style: italic; }
+        .caps           { text-transform: uppercase; }
+        .underline      { text-decoration: underline; }
+
+        .font-default   { font-family: $font-family--default; }
+        .font-monospace { font-family: $font-family--monospace; }
+
+        .center         { text-align: center; }
+        .align-right    { text-align: right; }

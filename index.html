@@ -3,6 +3,12 @@ layout: default
 title: Podcasts
 ---
 
+<ul class="nav-tabs">
+  <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="/podcasts/">Shows</a></li>
+  <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
+  <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="/podcasts/episodes">Episodes</a></li>
+</ul>
+
 <div class="tag-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee;">
   <h4 style="font-weight: bold; margin: 0 0 8px 0; display:">Filter by category:</h3>
   <ul>
@@ -10,13 +16,10 @@ title: Podcasts
   </ul>
 </div>
 
-<ul id="container" style="margin-left: 0; position: relative;">
 {% for podcast in site.podcasts %}
-  <li class="item" data-tags="{{ podcast.tags | join: ' ' }}" style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
-    <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
-    <h2 style="margin: 0 0 4px 0; font-weight: bold;"><a style="color: #333" href="/podcasts{{podcast.url}}">{{ podcast.title }}</a></h2>
-    <p style="margin: 0 0 8px 0;">{{ podcast.description }}</p>
-    <p><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>        
-  </li>
+  <div class="item mbxxxl" data-tags="{{ podcast.tags | join: ' ' }}" style="background: url({{ podcast.url-thumbnail }}) no-repeat; background-size: 60px; padding-left: 76px;">
+    <h2 class="mbxxs">{{ podcast.title }}</h2>
+    <p class="mbxxs">{{ podcast.description }}</p>
+    <p class="mbxxs"><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>
+  </div>
 {% endfor %}
-</ul>
