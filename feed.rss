@@ -25,15 +25,29 @@
         <item>
           <title>{{ episode.title }}</title>
           <description>
-            As heard on "{{ podcast.title }}"
-            
-            {{ episode.summary }}
+            <![CDATA[
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+              <p><strong>Notes from Pots:</strong></p>
+              <ul><li>{{ episode.summary }}</li></ul>
+              <p><strong>'{{ podcast.title }}' links:</strong></p>
+              <ul>
+                <li><a href="{{ podcast.url-web}}">Listen on their website</a></li>
+                <li><a href="{{ podcast.url-RSS}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-RSS}}">Subscribe via iTunes</a></li>
+              </ul>
+            ]]>
           </description>
           <content:encoded>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
               <p><strong>Notes from Pots:</strong></p>
               <ul><li>{{ episode.summary }}</li></ul>
+              <p><strong>'{{ podcast.title }}' links:</strong></p>
+              <ul>
+                <li><a href="{{ podcast.url-web}}">Listen on their website</a></li>
+                <li><a href="{{ podcast.url-RSS}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-RSS}}">Subscribe via iTunes</a></li>
+              </ul>
             ]]>
           </content:encoded>
           <guid>{{ episode.url }}</guid>
