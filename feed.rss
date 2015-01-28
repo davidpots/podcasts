@@ -1,4 +1,6 @@
 ---
+permalink: /feed/
+layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" 
@@ -10,12 +12,12 @@
     <description>A feed of recommended episodes, each one hand-picked by @DavidPots.</description>
 		<image>
 			<title>DavidPots Podcast Picks</title>
-			<link>http://davidpots.com/podcasts/episodes</link>
-			<url>http://davidpots.com/podcasts/images/feed-background.jpg</url>
+			<link>{{ site.baseurl }}/episodes</link>
+			<url>{{ site.baseurl }}/images/feed-background.jpg</url>
 		</image>
     <language>en</language>
-    <link>http://davidpots.com/podcasts/episodes</link>
-    <atom:link href="http://davidpots.com/podcasts/feed.rss" rel="self" type="application/rss+xml"/>
+    <link>{{ site.baseurl }}/episodes</link>
+    <atom:link href="{{ site.baseurl }}/feed.rss" rel="self" type="application/rss+xml"/>
 
     {% for episode in site.episodes reversed %}
 
