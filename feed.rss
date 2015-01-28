@@ -64,8 +64,8 @@
               </ul>
             ]]>
           </content:encoded>
-          <guid>{{ episode.url }}</guid>
-          <link>{{ episode.url }}</link>
+          <guid>{{ episode.url-web }}</guid>
+          <link>{{ episode.url-web }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="integer"/>
           <pubDate>{{ episode.date | date: '%a, %d %b %Y %T %Z' }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
