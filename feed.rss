@@ -27,26 +27,26 @@
           <description>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Notes from Pots:</strong></p>
-              <ul><li>{{ episode.summary }}</li></ul>
-              <p><strong>'{{ podcast.title }}' links:</strong></p>
+              <p><strong>Summary from Pots:</strong></p>
+              <p>{{ episode.summary }}</p><br />
+              <p><strong>To hear more of '{{ podcast.title }}':</strong></p>
               <ul>
-                <li><a href="{{ podcast.url-web}}">Listen on their website</a></li>
-                <li><a href="{{ podcast.url-RSS}}">Subscribe via RSS</a></li>
-                <li><a href="{{ podcast.url-RSS}}">Subscribe via iTunes</a></li>
+                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
               </ul>
             ]]>
           </description>
           <content:encoded>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Notes from Pots:</strong></p>
-              <ul><li>{{ episode.summary }}</li></ul>
-              <p><strong>'{{ podcast.title }}' links:</strong></p>
+              <p><strong>Summary from Pots:</strong></p>
+              <p>{{ episode.summary }}</p><br />
+              <p><strong>To hear more of '{{ podcast.title }}':</strong></p>
               <ul>
-                <li><a href="{{ podcast.url-web}}">Listen on their website</a></li>
-                <li><a href="{{ podcast.url-RSS}}">Subscribe via RSS</a></li>
-                <li><a href="{{ podcast.url-RSS}}">Subscribe via iTunes</a></li>
+                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
               </ul>
             ]]>
           </content:encoded>
