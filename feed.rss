@@ -17,7 +17,7 @@ layout: nil
 		</image>
     <language>en</language>
     <link>http://pots.fm/episodes</link>
-    <atom:link href="{{ site.baseurl }}/feed.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://pots.fm/feed" rel="self" type="application/rss+xml"/>
 
     {% for episode in site.episodes reversed %}
 
