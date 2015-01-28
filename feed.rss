@@ -32,7 +32,8 @@
           <content:encoded>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p>{{ episode.summary }}</p>
+              <p><strong>Notes from Pots:</strong></p>
+              <ul><li>{{ episode.summary }}</li></ul>
             ]]>
           </content:encoded>
           <guid>{{ episode.url }}</guid>
