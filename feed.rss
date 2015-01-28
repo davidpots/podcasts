@@ -27,9 +27,11 @@
           <description>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Summary from Pots:</strong></p>
-              <p>{{ episode.summary }}</p><br />
-              <p><strong>To hear more of '{{ podcast.title }}':</strong></p>
+              <p><strong>Pots episode notes:</strong></p>
+              <ul>
+                <li>{{ episode.summary }}</li>
+              </ul>
+              <p><strong>For more '{{ podcast.title }}':</strong></p>
               <ul>
                 <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
                 <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
@@ -40,9 +42,11 @@
           <content:encoded>
             <![CDATA[
               <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Summary from Pots:</strong></p>
-              <p>{{ episode.summary }}</p><br />
-              <p><strong>To hear more of '{{ podcast.title }}':</strong></p>
+              <p><strong>Pots episode notes:</strong></p>
+              <ul>
+                <li>{{ episode.summary }}</li>
+              </ul>
+              <p><strong>For more '{{ podcast.title }}':</strong></p>
               <ul>
                 <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
                 <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
