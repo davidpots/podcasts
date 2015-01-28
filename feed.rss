@@ -12,11 +12,11 @@ layout: nil
     <description>A feed of recommended episodes, each one hand-picked by @DavidPots.</description>
 		<image>
 			<title>DavidPots Podcast Picks</title>
-			<link>{{ site.baseurl }}/episodes</link>
-			<url>{{ site.baseurl }}/images/feed-background.jpg</url>
+			<link>http://pots.fm/episodes</link>
+			<url>http://pots.fm/images/feed-background.jpg</url>
 		</image>
     <language>en</language>
-    <link>{{ site.baseurl }}/episodes</link>
+    <link>http://pots.fm/episodes</link>
     <atom:link href="{{ site.baseurl }}/feed.rss" rel="self" type="application/rss+xml"/>
 
     {% for episode in site.episodes reversed %}
