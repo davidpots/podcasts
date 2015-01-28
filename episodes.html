@@ -5,12 +5,12 @@ permalink: /episodes/
 ---
 
 <ul class="nav-tabs">
-  <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="/podcasts/">Shows</a></li>
+  <li><a {% if page.title == "Podcasts" %} class="active"{% endif %} href="{{ site.baseurl }}/">Shows</a></li>
   <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
-  <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="/podcasts/episodes">Episodes</a></li>
+  <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="{{ site.baseurl }}/episodes">Episodes</a></li>
 </ul>
 
-<p class="center mhxxxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="http://davidpots.com/podcasts/feed.rss">RSS</a> or <a href="itpc://davidpots.com/podcasts/feed.rss">iTunes</a></p>
+<p class="center mhxxxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="{{ site.baseurl }}/feed.rss">RSS</a> or <a href="itpc://pots.fm/feed.rss">iTunes</a></p>
 
 {% for episode in site.episodes reversed %}
 
