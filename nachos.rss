@@ -1,0 +1,96 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+
+  <channel>
+    <title>Pots.fm</title>
+    <description>A podcast mixtape. All episodes hand-selected by @DavidPots.</description>
+		<image>
+			<url>http://pots.fm/images/feed-background-v5.jpg</url>
+      <title>Pots.fm</title>
+			<link>{{ site.url }}{{ site.baseurl }}/</link>
+		</image>
+    <itunes:new-feed-url>http://pots.fm/nachos.rss</itunes:new-feed-url>
+    <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
+    <itunes:author>David Potsiadlo</itunes:author>
+    <itunes:subtitle>A podcast mixtape. All episodes hand-selected by @DavidPots.</itunes:subtitle>
+    <itunes:summary>A podcast mixtape. All episodes hand-selected by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>David Potsiadlo</itunes:name>
+      <itunes:email>davidpots@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <language>en</language>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/nachos.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+
+    {% for episode in site.episodes reversed %}
+
+      {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
+      {% assign podcast = podcast_data | first %}
+
+        <item>
+          <title>{{ episode.title }}</title>
+          <description>
+            <![CDATA[
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+              <p><strong>Episode notes from Pots:</strong></p>
+              <ul>
+                <li>{{ episode.summary }}</li>
+              </ul>
+              <p><strong>Episode links:</strong></p>
+              <ul>
+                <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
+                <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
+              </ul>
+              <p><strong>For more '{{ podcast.title }}':</strong></p>
+              <ul>
+                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+              </ul>
+            ]]>
+          </description>
+          <content:encoded>
+            <![CDATA[
+              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+              <p><strong>Episode notes from Pots:</strong></p>
+              <ul>
+                <li>{{ episode.summary }}</li>
+              </ul>
+              <p><strong>Episode links:</strong></p>
+              <ul>
+                <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
+                <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
+              </ul>
+              <p><strong>For more '{{ podcast.title }}':</strong></p>
+              <ul>
+                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+              </ul>
+            ]]>
+          </content:encoded>
+          <guid isPermaLink="false">{{ episode.url-audio }}</guid>
+          <link>{{ episode.url-web }}</link>
+          <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="0"/>
+          <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+          <category>Tags: {{ podcast.tags | join: ', '  }}</category>
+          <itunes:subtitle>
+            As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 }}
+          </itunes:subtitle>
+          <itunes:summary>
+            As heard on "{{ podcast.title }}" // {{ episode.summary }}
+          </itunes:summary>
+        </item>
+
+    {% endfor %}
+
+  </channel>
+
+</rss>
