@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
@@ -14,6 +14,15 @@ layout: nil
 		</image>
     <itunes:new-feed-url>http://pots.fm/rss/</itunes:new-feed-url>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
+    <itunes:author>David Potsiadlo</itunes:author>
+    <itunes:owner>
+      <itunes:name>David Potsiadlo</itunes:name>
+      <itunes:email>davidpots@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/rss/" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
@@ -76,15 +85,6 @@ layout: nil
           <itunes:summary>
             As heard on "{{ podcast.title }}" // {{ episode.summary }}
           </itunes:summary>
-          <itunes:author>David Potsiadlo</itunes:author>
-          <itunes:owner>
-            <itunes:name>David Potsiadlo</itunes:name>
-            <itunes:email>davidpots@gmail.com</itunes:email>
-          </itunes:owner>
-          <itunes:category text="Technology">
-            <itunes:category text="Tech News"/>
-          </itunes:category>
-          <itunes:explicit>No</itunes:explicit>
         </item>
 
     {% endfor %}
