@@ -10,7 +10,7 @@ layout: null
 		<image>
 			<title>Pots Podcast Picks</title>
 			<link>{{ site.url }}{{ site.baseurl }}/</link>
-			<url>http://pots.fm/images/feed-background-v3.jpg</url>
+			<url>http://pots.fm/images/feed-background-v4.jpg</url>
 		</image>
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
