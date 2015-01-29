@@ -82,7 +82,7 @@ layout: null
           <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
           <itunes:subtitle>
-            As heard on "{{ podcast.title }}" // {{ episode.summary }}
+            As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 }}
           </itunes:subtitle>
           <itunes:summary>
             As heard on "{{ podcast.title }}" // {{ episode.summary }}
