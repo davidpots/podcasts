@@ -1,0 +1,26 @@
+---
+layout: page
+title: Shows
+permalink: /shows/
+---
+
+<ul class="nav-tabs">
+  <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="{{ site.baseurl }}/">Episode feed</a></li>
+  <li>&nbsp;&nbsp;or&nbsp;&nbsp;</li>
+  <li><a {% if page.title == "Shows" %} class="active"{% endif %} href="{{ site.baseurl }}/shows">Shows I subscribe to</a></li>
+</ul>
+
+<div class="tag-list" style="margin-bottom: 2rem; border-bottom: 1px solid #eee;">
+  <h4 style="font-weight: bold; margin: 0 0 8px 0; display:">Filter by category:</h3>
+  <ul>
+    <li class="active"><a class="show-all item__tag" href="#">show all</a></li>
+  </ul>
+</div>
+
+{% for podcast in site.podcasts %}
+  <div class="item mbxxxl" data-tags="{{ podcast.tags | join: ' ' }}" style="background: url({{ podcast.url-thumbnail }}) no-repeat; background-size: 60px; padding-left: 76px;">
+    <h2 class="mbxxs">{{ podcast.title }}</h2>
+    <p class="mbxxs">{{ podcast.description }}</p>
+    <p class="mbxxs"><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>
+  </div>
+{% endfor %}
