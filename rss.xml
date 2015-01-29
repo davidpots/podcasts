@@ -76,7 +76,7 @@ layout: null
               </ul>
             ]]>
           </content:encoded>
-          <guid>{{ episode.url-audio }}</guid>
+          <guid isPermaLink="false">{{ episode.url-audio }}</guid>
           <link>{{ episode.url-web }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="0"/>
           <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
