@@ -79,7 +79,7 @@ layout: null
           <guid>{{ episode.url-audio }}</guid>
           <link>{{ episode.url-web }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="0"/>
-          <pubDate>{{ episode.date | date: '%a, %d %b %Y %T %Z' }}</pubDate>
+          <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
           <category>Tags: {{ podcast.tags | join: ', '  }}</category>
           <itunes:subtitle>
             As heard on "{{ podcast.title }}" // {{ episode.summary }}
