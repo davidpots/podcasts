@@ -10,7 +10,7 @@ layout: null
 		<image>
 			<title>Pots Podcast Picks</title>
 			<link>{{ site.url }}{{ site.baseurl }}/</link>
-			<url>http://pots.fm/images/feed-background-v4.jpg</url>
+			<url>http://pots.fm/images/feed-background-v5.jpg</url>
 		</image>
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
@@ -74,6 +74,11 @@ layout: null
           <itunes:summary>
             As heard on "{{ podcast.title }}" // {{ episode.summary }}
           </itunes:summary>
+          <itunes:author>David Potsiadlo</itunes:author>
+          <itunes:owner>
+          <itunes:name>David Potsiadlo</itunes:name>
+          <itunes:email>davidpots@gmail.com</itunes:email>
+          </itunes:owner>
         </item>
 
     {% endfor %}
