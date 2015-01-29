@@ -15,6 +15,8 @@ layout: null
     <itunes:new-feed-url>http://pots.fm/rss.xml</itunes:new-feed-url>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
+    <itunes:subtitle>A podcast mixtape. All episodes hand-selected by @DavidPots.</itunes:subtitle>
+    <itunes:summary>A podcast mixtape. All episodes hand-selected by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>
     <itunes:owner>
       <itunes:name>David Potsiadlo</itunes:name>
       <itunes:email>davidpots@gmail.com</itunes:email>
