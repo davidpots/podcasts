@@ -16,7 +16,7 @@ layout: null
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A selection of recommended podcast episodes. Curated by @DavidPots.</itunes:subtitle>
-    <itunes:summary> selection of recommended podcast episodes. Curated by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>
+    <itunes:summary>A selection of recommended podcast episodes. Curated by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>
     <itunes:owner>
       <itunes:name>David Potsiadlo</itunes:name>
       <itunes:email>davidpots@gmail.com</itunes:email>
