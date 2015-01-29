@@ -1,4 +1,5 @@
 ---
+layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
@@ -11,10 +12,11 @@
       <title>Pots Podcast Picks</title>
 			<link>{{ site.url }}{{ site.baseurl }}/</link>
 		</image>
+    <itunes:new-feed-url>http://pots.fm/feed.xml</itunes:new-feed-url>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ "/feed/" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
 
     {% for episode in site.episodes reversed %}
 
