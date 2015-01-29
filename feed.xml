@@ -5,11 +5,11 @@
 
   <channel>
     <title>Pots Podcast Picks</title>
-    <description>A feed of recommended episodes, each one hand-picked by @DavidPots.</description>
+    <description>A feed of recommended episodes, each entry hand-picked by @DavidPots.</description>
 		<image>
-			<title>Pots Podcast Picks</title>
-			<link>{{ site.url }}{{ site.baseurl }}/</link>
 			<url>http://pots.fm/images/feed-background-v5.jpg</url>
+      <title>Pots Podcast Picks</title>
+			<link>{{ site.url }}{{ site.baseurl }}/</link>
 		</image>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <language>en</language>
@@ -63,7 +63,7 @@
               </ul>
             ]]>
           </content:encoded>
-          <guid>{{ episode.url-web }}</guid>
+          <guid>{{ episode.url-audio }}</guid>
           <link>{{ episode.url-web }}</link>
           <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="0"/>
           <pubDate>{{ episode.date | date: '%a, %d %b %Y %T %Z' }}</pubDate>
@@ -82,6 +82,7 @@
           <itunes:category text="Technology">
             <itunes:category text="Tech News"/>
           </itunes:category>
+          <itunes:explicit>No</itunes:explicit>
         </item>
 
     {% endfor %}
