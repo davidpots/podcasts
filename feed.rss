@@ -12,7 +12,7 @@ layout: null
       <title>Pots.fm</title>
 			<link>{{ site.url }}{{ site.baseurl }}/</link>
 		</image>
-    <itunes:new-feed-url>http://pots.fm/nachos.rss</itunes:new-feed-url>
+    <itunes:new-feed-url>http://pots.fm/feed.rss</itunes:new-feed-url>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A podcast mixtape. All episodes hand-selected by @DavidPots.</itunes:subtitle>
@@ -27,7 +27,7 @@ layout: null
     <itunes:explicit>No</itunes:explicit>
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/nachos.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ "/feed.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
 
     {% for episode in site.episodes reversed %}
 
