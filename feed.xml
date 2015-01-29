@@ -12,7 +12,7 @@ layout: nil
       <title>Pots Podcast Picks</title>
 			<link>{{ site.url }}{{ site.baseurl }}/</link>
 		</image>
-    <itunes:new-feed-url>http://pots.fm/feed.xml</itunes:new-feed-url>
+    <itunes:new-feed-url>http://pots.fm/feed/</itunes:new-feed-url>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <language>en</language>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
