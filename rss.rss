@@ -11,8 +11,9 @@ layout: null
 		<image>
 			<url>http://pots.fm/images/feed-background-v5.jpg</url>
       <title>Pots FM</title>
-			<link>{{ site.url }}{{ site.baseurl }}/</link>
+			<link>http://pots.fm</link>
 		</image>
+    <author>David Potsiadlo</author>
     <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A selection of recommended podcast episodes. Curated by @DavidPots.</itunes:subtitle>
@@ -28,74 +29,62 @@ layout: null
       <itunes:category text="Podcasting"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <language>en</language>
-    <atom:link href="{{ "/rss.rss" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-
+    <language>en-us</language>
+    <atom:link href="http://pots.fm/rss.rss" rel="self" type="application/rss+xml"/>
     {% for episode in site.episodes reversed %}
-
       {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
       {% assign podcast = podcast_data | first %}
-
-        <item>
-          <title>{{ episode.title }}</title>
-          <description>
-            <![CDATA[
-              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Episode notes from Pots:</strong></p>
-              <ul>
-                <li>{{ episode.summary }}</li>
-              </ul>
-              <p><strong>Episode links:</strong></p>
-              <ul>
-                <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
-                <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
-              </ul>
-              <p><strong>For more '{{ podcast.title }}':</strong></p>
-              <ul>
-                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
-                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
-                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
-              </ul>
-            ]]>
-          </description>
-          <content:encoded>
-            <![CDATA[
-              <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
-              <p><strong>Episode notes from Pots:</strong></p>
-              <ul>
-                <li>{{ episode.summary }}</li>
-              </ul>
-              <p><strong>Episode links:</strong></p>
-              <ul>
-                <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
-                <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
-              </ul>
-              <p><strong>For more '{{ podcast.title }}':</strong></p>
-              <ul>
-                <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
-                <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
-                <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
-              </ul>
-            ]]>
-          </content:encoded>
-          <guid isPermaLink="false">{{ episode.url-audio }}</guid>
-          <link>{{ episode.url-web }}</link>
-          <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="1"/>
-          <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
-          <category>Tags: {{ podcast.tags | join: ', '  }}</category>
-          <itunes:author>
-            {{ podcast.title }}
-          </itunes:author>
-          <itunes:subtitle>
-            As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 }}
-          </itunes:subtitle>
-          <itunes:summary>
-            As heard on "{{ podcast.title }}" // {{ episode.summary }}
-          </itunes:summary>
-        </item>
-
+      <item>
+        <title>{{ episode.title }}</title>
+        <description>
+          <![CDATA[
+            <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+            <p><strong>Episode notes from Pots:</strong></p>
+            <ul>
+              <li>{{ episode.summary }}</li>
+            </ul>
+            <p><strong>Episode links:</strong></p>
+            <ul>
+              <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
+              <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
+            </ul>
+            <p><strong>For more '{{ podcast.title }}':</strong></p>
+            <ul>
+              <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+              <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+              <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+            </ul>
+          ]]>
+        </description>
+        <content:encoded>
+          <![CDATA[
+            <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
+            <p><strong>Episode notes from Pots:</strong></p>
+            <ul>
+              <li>{{ episode.summary }}</li>
+            </ul>
+            <p><strong>Episode links:</strong></p>
+            <ul>
+              <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
+              <li><a href="{{ episode.url-web }}">Visit episode webpage</a></li>
+            </ul>
+            <p><strong>For more '{{ podcast.title }}':</strong></p>
+            <ul>
+              <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
+              <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
+              <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+            </ul>
+          ]]>
+        </content:encoded>
+        <guid isPermaLink="false">{{ episode.url-audio }}</guid>
+        <link>{{ episode.url-web }}</link>
+        <enclosure url="{{ episode.url-audio }}" type="audio/mpeg" length="1"/>
+        <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+        <category>Tags: {{ podcast.tags | join: ', '  }}</category>
+        <itunes:author>{{ podcast.title }}</itunes:author>
+        <itunes:subtitle>As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 }}</itunes:subtitle>
+        <itunes:summary>As heard on "{{ podcast.title }}" // {{ episode.summary }}</itunes:summary>
+      </item>
     {% endfor %}
-
   </channel>
-
 </rss>
