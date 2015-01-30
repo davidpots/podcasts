@@ -13,6 +13,7 @@ layout: null
       <title>Pots FM</title>
 			<link>http://www.pots.fm</link>
 		</image>
+    <itunes:new-feed-url>http://www.pots.fm/rss.rss</itunes:new-feed-url>
     <itunes:image href="http://www.pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A selection of recommended podcast episodes. Curated by @DavidPots.</itunes:subtitle>
