@@ -6,14 +6,14 @@ layout: null
 
   <channel>
     <title>Pots FM</title>
-    <link>http://pots.fm</link>
+    <link>http://www.pots.fm</link>
     <description>A podcast mixtape. All episodes hand-selected by @DavidPots.</description>
 		<image>
-			<url>http://pots.fm/images/feed-background-v5.jpg</url>
+			<url>http://www.pots.fm/images/feed-background-v5.jpg</url>
       <title>Pots FM</title>
-			<link>http://pots.fm</link>
+			<link>http://www.pots.fm</link>
 		</image>
-    <itunes:image href="http://pots.fm/images/feed-background-v5.jpg" />
+    <itunes:image href="http://www.pots.fm/images/feed-background-v5.jpg" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A selection of recommended podcast episodes. Curated by @DavidPots.</itunes:subtitle>
     <itunes:summary>A selection of recommended podcast episodes. Curated by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>
@@ -29,7 +29,7 @@ layout: null
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
     <language>en-us</language>
-    <atom:link href="http://pots.fm/rss.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://www.pots.fm/rss.rss" rel="self" type="application/rss+xml"/>
     {% for episode in site.episodes reversed %}
       {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
       {% assign podcast = podcast_data | first %}
