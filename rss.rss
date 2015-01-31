@@ -43,6 +43,16 @@ layout: null
             <ul>
               <li>{{ episode.summary }}</li>
             </ul>
+            {% if episode.timestamps %}
+              <p><strong>Episode highlights:</strong></p>
+              <ul>
+              {% for timestamp in episode.timestamps %}
+                <li>
+                  <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
+                </li>
+              {% endfor %}
+              </ul>
+            {% endif %}
             <p><strong>Episode links:</strong></p>
             <ul>
               <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>
@@ -63,6 +73,16 @@ layout: null
             <ul>
               <li>{{ episode.summary }}</li>
             </ul>
+            {% if episode.timestamps %}
+              <p><strong>Episode highlights:</strong></p>
+              <ul>
+              {% for timestamp in episode.timestamps %}
+                <li>
+                  <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
+                </li>
+              {% endfor %}
+              </ul>
+            {% endif %}
             <p><strong>Episode links:</strong></p>
             <ul>
               <li><a href="{{ episode.url-audio }}">Download episode as MP3</a></li>

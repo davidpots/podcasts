@@ -25,6 +25,16 @@ title: Episodes
       <source src="{{ episode.url-audio }}" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
+    {% if episode.timestamps %}
+      <h4>Timestamps:</h4>
+      <ul>
+      {% for timestamp in episode.timestamps %}
+        <li>
+          <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
+        </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 
 {% endfor %}
