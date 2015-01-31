@@ -91,7 +91,7 @@
         .bold           { font-weight: $font-weight--strong; }
         .weak           { color: $color--gray-lighter; }
         .normal         { font-weight: $font-weight--normal; }
-        .italic         { font-style: italic; }
+        em,.italic      { font-style: italic; }
         .caps           { text-transform: uppercase; }
         .underline      { text-decoration: underline; }
 
