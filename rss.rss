@@ -40,9 +40,9 @@ layout: null
           <![CDATA[
             <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
             <p><strong>Episode notes from Pots:</strong></p>
-            <p><ul>
+            <ul>
               <li>{{ episode.summary }}</li>
-            </ul></p>
+            </ul>
             {% if episode.timestamps %}
               <p><strong>Episode highlights:</strong></p>
               <ul>
@@ -70,9 +70,9 @@ layout: null
           <![CDATA[
             <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
             <p><strong>Episode notes from Pots:</strong></p>
-            <p><ul>
+            <ul>
               <li>{{ episode.summary }}</li>
-            </ul></p>
+            </ul>
             {% if episode.timestamps %}
               <p><strong>Episode highlights:</strong></p>
               <ul>
