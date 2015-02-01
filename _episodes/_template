@@ -5,6 +5,9 @@ title:         "___________"
 summary:       "___________"
 url-audio:     "___________"
 url-web:       "___________"
+timestamps:
+ - time:       "0:00"
+   notes:      "______"
 ---
 
 {% assign podcast_data = site.data.podcasts | where:"title", page.podcast_title %}
