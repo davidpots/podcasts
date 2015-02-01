@@ -2,7 +2,7 @@
 date:          "2015-01-29"
 podcast:       "The Duncan Trussell Family Hour"
 title:         "#140: Tim Ferriss"
-summary:       "Two of my favorite podcast dudes of the past few years, finally on a show together. Duncan interviews Tim Ferriss, who is a lifestyle author (4 Hour Body, 4 Hour Work Week, etc) who has also found recent success in angel investing and running his own podcast (The Tim Ferris Show, which is one of my favorites of 2014). One might think Tim and Duncan have radically different viewpoints on approaching mastery, but the conversation unfolds beautifully and two are able to relate in many unexpected ways. Topics: writing, routine, general body hacking, Tim's experience with psychadelics, yoga, and 'woo-woo' (for better and worse), Ganesh and plenty of Buddhism."
+summary:       "Two of my favorite podcast dudes of the past few years, finally on a show together. Duncan interviews Tim Ferriss, who is a lifestyle author (4 Hour Body, 4 Hour Work Week, etc) who has also found recent success in angel investing and running his own podcast (The Tim Ferriss Show, which is one of my favorites of 2014). One might think Tim and Duncan have radically different viewpoints on approaching mastery, but the conversation unfolds beautifully and two are able to relate in many unexpected ways. Topics: writing, routine, general body hacking, Tim's experience with psychadelics, yoga, and 'woo-woo' (for better and worse), Ganesh and plenty of Buddhism."
 url-audio:     "http://traffic.libsyn.com/lavenderhour/DTFH_140_TIM_Ferriss.mp3"
 url-web:       "http://duncantrussell.com/tim-ferriss/"
 timestamps:
