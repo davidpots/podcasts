@@ -10,9 +10,9 @@
         $color--gray-lightest:  #f6f6f6;
         $color--white:          #fff;
 
-        $color--primary:        #ee2a7b;
-        $color--secondary:      #39b54a;
-        $color--link:           #0b88ca;
+        $color--primary:        #ff4a00;
+        $color--secondary:      #ff0065;
+        $color--link:           $color--primary;
         
         .color--black          { color: $color--black; }
         .color--gray-dark      { color: $color--gray-dark; }
@@ -38,31 +38,6 @@
         
 
 //  ----------------------------------------------------------------------------
-//  Type
-//  ----------------------------------------------------------------------------
-
-        $font-family--default:    Roboto, Helvetica, sans-serif;
-        $font-family--monospace:  Courier, monospace;
-
-        $font-weight--normal:     400;
-        $font-weight--strong:     700;
-
-        $font-size--xxxlarge:     3rem;
-        $font-size--xxlarge:      2rem;
-        $font-size--xlarge:       1.5rem;
-        $font-size--large:        1.25rem;
-        $font-size--normal:       1rem;
-        $font-size--small:        .875rem;
-        $font-size--xsmall:       .750rem;
-
-        $line-height--default:    1.4;
-        $line-height--heading:    1.25;
-
-        $font-color--default:     $color--gray;
-        $font-color--strong:      $color--gray-dark;
-        $font-color--weak:        $color--gray-light;
-
-//  ----------------------------------------------------------------------------
 //  Spacing & Breakpoints
 //  ----------------------------------------------------------------------------
 
@@ -80,14 +55,41 @@
         // Spacing (for margin & padding)
         $space--xxxlarge:       4rem;
         $space--xxlarge:        3rem;
-        $space--xlarge:         2rem;
-        $space--large:          1.5rem;
+        $space--xlarge:         2.5rem;
+        $space--large:          1.75rem;
         $space--normal:         1rem;
         $space--small:          .75rem;
         $space--xsmall:         .5rem;
         $space--xxsmall:        .25rem;
         $space--xxxsmall:       .125rem;
         $space--none:           0rem;
+
+//  ----------------------------------------------------------------------------
+//  Type
+//  ----------------------------------------------------------------------------
+
+        $font-family--default:    Roboto, Helvetica, sans-serif;
+        $font-family--monospace:  Courier, monospace;
+
+        $font-weight--normal:     400;
+        $font-weight--strong:     700;
+
+        $font-size--xxxlarge:     3rem;
+        $font-size--xxlarge:      2.5rem;
+        $font-size--xlarge:       1.5rem;
+        $font-size--large:        1.25rem;
+        $font-size--normal:       1rem;
+        $font-size--small:        .875rem;
+        $font-size--xsmall:       .750rem;
+
+        $line-height--default:    1.4;
+        $line-height--heading:    1.25;
+
+        $font-color--default:     $color--gray;
+        $font-color--strong:      $color--gray-dark;
+        $font-color--weak:        $color--gray-light;
+
+
 
 //  ----------------------------------------------------------------------------
 //  Borders
