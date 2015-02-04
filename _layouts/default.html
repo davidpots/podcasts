@@ -14,7 +14,7 @@
         <p class="site-subtitle">A curated list of recommended podcasts. All shows &amp; episodes are hand-picked by <a class="color--white underline" href="http://twitter.com/davidpots">@DavidPots</a>.</p>
 
         <ul class="nav-tabs">
-          <li><a {% if page.title == "Episodes" %} class="active"{% endif %} href="{{ site.baseurl }}/">Episodes</a></li>
+          <li><a {% if page.title != "Shows" %} class="active"{% endif %} href="{{ site.baseurl }}/">Episodes</a></li>
           <li>&nbsp;</li>
           <li><a {% if page.title == "Shows" %} class="active"{% endif %} href="{{ site.baseurl }}/shows">Shows</a></li>
         </ul>
