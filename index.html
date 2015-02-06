@@ -3,32 +3,47 @@ layout: default
 title: Pots Podcast Picks
 ---
 
-<p class="center mhxxxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="https://itunes.apple.com/us/podcast/pots-fm/id963316501">iTunes</a> or <a href="{{ site.baseurl }}/rss.rss">RSS</a>.</p>
+<p class="center mhxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="https://itunes.apple.com/us/podcast/pots-fm/id963316501">iTunes</a> or <a href="{{ site.baseurl }}/rss.rss">RSS</a>.</p>
 
 {% for episode in site.episodes reversed %}
 
   {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
   {% assign podcast = podcast_data | first %}
 
-  <div class="mbxxxl" style="background: url({{ podcast.url-thumbnail }}) no-repeat; background-size: 60px; padding-left: 76px;">
-    <h2 class="mbxxs">{{ episode.title }}</h2>
-    <p class="mbxxs weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
-    <p class="mbxxs">{{ episode.summary }}</p>
-    <p class="mbxs"><a href="{{ episode.url-audio }}">Download MP3</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ episode.url-web }}">Episode website</a></p>
-    <audio controls>
-      <source src="{{ episode.url-audio }}" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
-    <!-- {% if episode.timestamps %}
-      <h4>Timestamps:</h4>
-      <ul>
+  <div style="margin-bottom: 12rem;">
+    <p class="center mbs">
+      <img src="{{ podcast.url-thumbnail }}" width="188" style="width: 188px; height: 188px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
+    </p>
+    <h2 class="h1 center mbs">{{ episode.title }}</h2>
+    <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
+
+    <p class="center">
+      <audio controls>
+        <source src="{{ episode.url-audio }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+    </p>
+
+    <p class="mbxxs bold">Episode summary:</p>
+    <p class="mbs">{{ episode.summary }}</p>
+
+    {% if episode.timestamps %}
+      <p class="mbxxs bold">Episode highlights:</p>
+      <ul class="mbs" style="padding-left: 1.25rem;">
       {% for timestamp in episode.timestamps %}
         <li>
           <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
         </li>
       {% endfor %}
       </ul>
-    {% endif %} -->
+    {% endif %}
+
+    <p class="mbxxs bold">Episode links:</p>
+    <ul class="mbxs" style="padding-left: 1.25rem;">
+      <li><a href="{{ episode.url-audio }}">Download MP3</a></li>
+      <li><a href="{{ episode.url-web }}">Episode website</a></li>
+    </ul>
+
   </div>
 
 {% endfor %}

@@ -49,7 +49,7 @@
         $breakpoint--desktop: 48em; // 768px
 
         // Grid
-        $grid--max-width: 64rem; // 1024px
+        $grid--max-width: 72rem; // 1024px
         $grid--gutter: 1.5 * $space;
 
         // Spacing (for margin & padding)
@@ -83,7 +83,7 @@
         $font-size--xsmall:       .750rem;
 
         $line-height--default:    1.4;
-        $line-height--heading:    1.25;
+        $line-height--heading:    1.2;
 
         $font-color--default:     $color--gray;
         $font-color--strong:      $color--gray-dark;
