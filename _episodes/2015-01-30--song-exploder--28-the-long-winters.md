@@ -7,7 +7,7 @@ url-audio:     "http://traffic.libsyn.com/songexploder/SongExploder28.mp3"
 url-web:       "http://songexploder.net/episode-28-the-long-winters/"
 timestamps:
  - time:       "0:00"
-   notes:      "John Roderick explains why and how this song came to be."
+   notes:      "John Roderick explains why he wrote this song and how it all came together."
  - time:       "13:33"
    notes:      "'The Commander Thinks Aloud' full song"
 ---
