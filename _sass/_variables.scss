@@ -89,6 +89,10 @@
         $font-color--strong:      $color--gray-dark;
         $font-color--weak:        $color--gray-light;
 
+        .font-color--default      { color: $font-color--default; }
+        .font-color--strong       { color: $font-color--strong; }
+        .font-color--weak         { color: $font-color--weak; }
+
 
 
 //  ----------------------------------------------------------------------------

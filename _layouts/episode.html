@@ -1,12 +1,12 @@
 ---
-layout: home
-title: Pots Podcast Picks
+layout: page
 ---
+<!--  podcast, title, summary, date, url-audio, url-web -->
 
-<p class="center mhxl mbxxl" style="background: #ffffdd; padding: 1rem;">Subscribe to this feed of episodes via <a href="https://itunes.apple.com/us/podcast/pots-fm/id963316501">iTunes</a> or <a href="{{ site.baseurl }}/rss.rss">RSS</a>.</p>
+<!-- page. -->
 
-{% for episode in site.episodes reversed %}
-
+  {% assign episode = page %}
+  
   {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
   {% assign podcast = podcast_data | first %}
 
@@ -15,7 +15,7 @@ title: Pots Podcast Picks
       <img src="{{ podcast.url-thumbnail }}" width="188" style="width: 188px; height: 188px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
     </p>
     <h2 class="h1 center mbs">
-      <a class="font-color--strong" href="{{ episode.url }}">{{ episode.title }}</a>
+      {{ episode.title }}
     </h2>
     <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
 
@@ -40,11 +40,16 @@ title: Pots Podcast Picks
     {% endif %}
 
     <p class="mbxxs bold">Episode links:</p>
-    <ul class="mbxs" style="padding-left: 1.25rem;">
+    <ul class="mbs" style="padding-left: 1.25rem;">
       <li><a href="{{ episode.url-audio }}">Download MP3</a></li>
       <li><a href="{{ episode.url-web }}">Episode website</a></li>
     </ul>
 
-  </div>
+    <p class="mbxxs bold">For more <em>{{ podcast.title }}</em>:</p>
+    <ul class="mbs" style="padding-left: 1.25rem;">
+      <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
+      <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+      <li><a href="{{ podcast.url-web }}">View podcast website</a></li>
+    </ul>
 
-{% endfor %}
+  </div>
