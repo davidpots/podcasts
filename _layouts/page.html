@@ -1,10 +1,26 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  {% include head.html %}
 
-</div>
+  <body>
+
+    {% include header.html %}
+
+    <section class="masthead pvm mbxl">
+      <div class="container--col-6">
+        <p class="color--white man strong"><a class="color--white" href="/">&larr; Pots Podcast Picks</a></p>
+      </div>
+    </section>
+    
+    <div class="container--col-6">
+      
+      {{ content }}
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

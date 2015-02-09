@@ -23,3 +23,9 @@ defaults:
       type: "podcasts" # a collection in your site, in plural form
     values:
       layout: "podcast"
+  -
+    scope:
+      path: ""
+      type: "episodes" # a collection in your site, in plural form
+    values:
+      layout: "episode"
