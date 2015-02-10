@@ -15,6 +15,12 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+  {% if page.layout == 'home' %}
+    <!-- Only show a defined thumbnail if it isn't an episode or show page (where we want to to be scraped) -->
+    <meta property="og:image" content="{% if podcast.url-thumbnail %}{{ podcast.url-thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}">
+    <link rel="image_src" href="{% if page.url-thumbnail %}{{ page.url-thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}">
+  {% endif %}
+
   <script>
     // via http://ianrose.me/2014/03/30/permanent-rediect-github-project-page/
     // if (window.location.href.indexOf('http://davidpots.com/podcasts') === 0) {
