@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if podcast.url-thumbnail %}{{ podcast.url-thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:type" content="website" />
@@ -15,7 +14,6 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="image_src" href="{% if page.url-thumbnail %}{{ page.url-thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}">
 
   <script>
     // via http://ianrose.me/2014/03/30/permanent-rediect-github-project-page/
