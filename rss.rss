@@ -9,12 +9,12 @@ layout: null
     <link>http://www.pots.fm</link>
     <description>A podcast mixtape. All episodes hand-selected by @DavidPots.</description>
 		<image>
-			<url>http://www.pots.fm/images/feed-background-v5.jpg</url>
+			<url>{{ site.thumbnail }}</url>
       <title>Pots FM</title>
 			<link>http://www.pots.fm</link>
 		</image>
     <itunes:new-feed-url>http://www.pots.fm/rss.rss</itunes:new-feed-url>
-    <itunes:image href="http://www.pots.fm/images/feed-background-v5.jpg" />
+    <itunes:image href="{{ site.thumbnail }}" />
     <itunes:author>David Potsiadlo</itunes:author>
     <itunes:subtitle>A selection of recommended podcast episodes. Curated by @DavidPots.</itunes:subtitle>
     <itunes:summary>A selection of recommended podcast episodes. Curated by @DavidPots. A few new episodes are added each week. Topics include web design, startups, movies, history, arts and pop culture.</itunes:summary>

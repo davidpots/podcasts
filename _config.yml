@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.pots.fm" # the base hostname & protocol for your site
 twitter_username: davidpots
 github_username:  davidpots
+thumbnail: "http://www.pots.fm/images/feed-background-v5.jpg"
 
 # Build settings
 markdown: kramdown
