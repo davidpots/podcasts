@@ -7,7 +7,7 @@ url-audio:     "http://fdlyr.co/d/specials/cdn.5by5.tv/audio/broadcasts/specials
 url-web:       "http://5by5.tv/specials/31"
 timestamps:
  - time:       "12:26"
-   notes:      "Great segment here on how Cash (7 years old) views the role of technology in the classroom: iPads, Kindles, laptops, Google, etc. Insightful views on what Cash thinks is helpful, what he thinks is a waste of time, useful websites and apps, etc. He also explains his preference regarding iPads vs. computers."
+   notes:      "Great segment here on Cash (7 years old) explaining the role of technology in his school classroom: iPads, Kindles, laptops, Google, etc. Insightful views on what Cash thinks is helpful, what he thinks is a waste of time, useful websites and apps, etc. He also explains his preference regarding iPads vs. computers."
 ---
 
 {% assign podcast_data = site.data.podcasts | where:"title", page.podcast_title %}
