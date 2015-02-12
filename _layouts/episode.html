@@ -33,7 +33,7 @@ layout: page
       <ul class="mbs" style="padding-left: 1.25rem;">
       {% for timestamp in episode.timestamps %}
         <li>
-          <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
+          <em><a href="#t={{ timestamp.time }}">{{ timestamp.time }}</a></em> – {{ timestamp.notes }}
         </li>
       {% endfor %}
       </ul>
