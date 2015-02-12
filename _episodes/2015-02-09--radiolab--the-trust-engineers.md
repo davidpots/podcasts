@@ -7,7 +7,7 @@ url-audio:     "http://audio.wnyc.org/radiolab_podcast/radiolab_podcast15trusten
 url-web:       "http://www.radiolab.org/story/trust-engineers/"
 timestamps:
  - time:       "0:00"
-   notes:      "First segment, where we meet Facebook 'trust engineer' Arturo Bejar (and a team of other researchers) who are tweaking our online experience bit by bit."
+   notes:      "First segment, where we meet Facebook 'trust engineer' Arturo Bejar (and a team of other researchers) who are tweaking our online experience bit by bit. Awesome look into the tests they run (using the 'report this' feature as an example), specifically focusing on the unimaginably large sample sizes they're able to utilize."
  - time:       "17:24"
    notes:      "Second segment, which dives into the public's reaction to the breaking story that Facebook was tinkering with the positive/negative language in their news feeds (to guage how people responded)."
 ---
