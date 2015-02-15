@@ -3,7 +3,7 @@ date:          "2015-02-13"
 podcast:       "Invisibilia"
 title:         "Our Computers, Ourselves"
 summary:       "A wonderfully crafted episode looking at the ways technology affects our lives. Are computers changing human character? Is our closeness with technology changing us as a species? Some great insight into how our devices can enhance our core human capacities; how society reacts to the introduction of new devices; and how emotions (sadness, anger, happiness) can literally be transfered to others through these tools."
-url-audio:     "http://podcastdownload.npr.org/anon.npr-podcasts/podcast/1/510307/385895405/npr_385895405.mp3?_kip_ipx=2075400460-1423967657"
+url-audio:     "http://www.pots.fm/audio/2015-02-13--invisibilia--our-computers-ourselves.mp3"
 url-web:       "http://www.npr.org/programs/invisibilia/385792677/our-computers-ourselves?showDate=2015-02-13"
 timestamps:
  - time:       "0:00"
