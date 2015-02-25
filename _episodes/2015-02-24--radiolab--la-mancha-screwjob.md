@@ -9,7 +9,7 @@ timestamps:
  - time:       "0:48"
    notes:      "First segment starts, telling the tale of the professional wrestling 'Montreal Screwjob' in 1997 (Bret Hart, Vince McMahon, Shawn Michaels). We learn how this event subtly changed the way pro wrestling dealt with authenticity and the truth."
  - time:       "36:16"
-   notes:      "Second segment starts, looking at Miguel Cervante’s Don Quixote and how it dealt with narrative authenticity (or lack thereof) in an entirely new way. Unreliable narrator, meta-narration, and how Cervante used these to deal with an unlicensed 'fan fiction' Don Quixote sequel someone else had written."
+   notes:      "Second segment starts, looking at Miguel Cervante’s Don Quixote and how it dealt with narrative authenticity (or lack thereof) in an entirely new way. Unreliable narrator, meta-narration, and how Cervante used these in Don Quixote's sequel to deal with unlicensed fan-fiction someone else had written."
  - time:       "44:13"
    notes:      "Conclusions. Initially a wrap-up of the Don Quixote segment, but then a transition into insights on the appeal of multiple layers within fiction, meta-narrative, and how this has resonated with audiences in the modern age."
 ---
