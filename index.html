@@ -20,7 +20,7 @@ title: Pots Podcast Picks
     <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
 
     <p class="center">
-      <audio controls preload="metadata">
+      <audio controls preload="none">
         <source src="{{ episode.url-audio }}" type="audio/mpeg">
       </audio>
     </p>
@@ -33,7 +33,7 @@ title: Pots Podcast Picks
       <ul class="mbs" style="padding-left: 1.25rem;">
       {% for timestamp in episode.timestamps %}
         <li>
-          <em>{{ timestamp.time }}</em> – {{ timestamp.notes }}
+          <em><a href="{{ episode.url }}#t={{ timestamp.time }}">{{ timestamp.time }}</a></em> – {{ timestamp.notes }}
         </li>
       {% endfor %}
       </ul>
