@@ -9,6 +9,3 @@ timestamps:
  - time:       "1:06:53"
    notes:      "Marco's recap of his Tesla test drive experience. Quite the good summary. Plus, Marco's insightful thoughts on what this means for disruption in the car space."
 ---
-
-{% assign podcast_data = site.data.podcasts | where:"title", page.podcast_title %}
-{% assign podcast = podcast_data | first %}
