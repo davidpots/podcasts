@@ -40,10 +40,18 @@ title: Pots Podcast Picks
     {% endif %}
 
     <p class="mbxxs bold">Episode links:</p>
-    <ul class="mbxs" style="padding-left: 1.25rem;">
+    <ul class="mbs" style="padding-left: 1.25rem;">
       <li><a href="{{ episode.url-audio }}">Download MP3</a></li>
       <li><a href="{{ episode.url-web }}">Episode website</a></li>
     </ul>
+
+    <p class="mbxxs bold">For more <em>{{ podcast.title }}</em>:</p>
+    <ul class="mbs" style="padding-left: 1.25rem;">
+      <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
+      <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+      <li><a href="{{ podcast.url-web }}">View podcast website</a></li>
+    </ul>
+
 
   </div>
 
