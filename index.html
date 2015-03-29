@@ -8,6 +8,7 @@ title: Pots Podcast Picks
 {% for episode in site.episodes reversed %}
 
   {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
+
   {% assign podcast = podcast_data | first %}
 
   <div style="margin-bottom: 12rem;">
