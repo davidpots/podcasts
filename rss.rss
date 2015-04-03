@@ -41,7 +41,7 @@ layout: null
             <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
             <p><strong>Episode notes from Pots:</strong></p>
             <ul>
-              <li>{{ episode.summary }}</li>
+              <li>{{ episode.summary | xml_escape}}</li>
             </ul>
             {% if episode.timestamps %}
               <p><strong>Episode highlights:</strong></p>
@@ -75,7 +75,7 @@ layout: null
             <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
             <p><strong>Episode notes from Pots:</strong></p>
             <ul>
-              <li>{{ episode.summary }}</li>
+              <li>{{ episode. }}</li>
             </ul>
             {% if episode.timestamps %}
               <p><strong>Episode highlights:</strong></p>
@@ -110,8 +110,8 @@ layout: null
         <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
         <category>Tags: {{ podcast.tags | join: ', '  }}</category>
         <itunes:author>{{ podcast.title }}</itunes:author>
-        <itunes:subtitle>As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 }}</itunes:subtitle>
-        <itunes:summary>As heard on "{{ podcast.title }}" // {{ episode.summary }}</itunes:summary>
+        <itunes:subtitle>As heard on "{{ podcast.title }}" // {{ episode.summary | truncate: 180 | xml_escape}}</itunes:subtitle>
+        <itunes:summary>As heard on "{{ podcast.title }}" // {{ episode.summary | xml_escape }}</itunes:summary>
       </item>
     {% endfor %}
   </channel>
