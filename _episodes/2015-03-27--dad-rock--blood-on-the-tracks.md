@@ -8,6 +8,6 @@ url-web:       "https://soundcloud.com/dadrockshow/ep-5-blood-on-the-tracks"
 timestamps:
  - time:       "0:00"
    notes:      "Intro banter and theme song(s). Skippable if you're in a hurry; no Dylan talk."
- - time:       "1:46"
+ - time:       "3:17"
    notes:      "The discussion begins! If you're reading this, start here."
 ---
