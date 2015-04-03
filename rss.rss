@@ -61,8 +61,12 @@ layout: null
             <p><strong>For more '{{ podcast.title }}':</strong></p>
             <ul>
               <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
-              <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
-              <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+              {% if podcast.url-rss %}
+                <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+              {% endif %}
+              {% if podcast.url-itunes %}
+                <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
+              {% endif %}
             </ul>
           ]]>
         </description>
@@ -91,8 +95,12 @@ layout: null
             <p><strong>For more '{{ podcast.title }}':</strong></p>
             <ul>
               <li><a href="{{ podcast.url-web}}">Visit their website</a></li>
-              <li><a href="{{ podcast.url-rss}}">Subscribe via RSS</a></li>
-              <li><a href="{{ podcast.url-itunes}}">Subscribe via iTunes</a></li>
+              {% if podcast.url-rss %}
+                <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+              {% endif %}
+              {% if podcast.url-itunes %}
+                <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
+              {% endif %}
             </ul>
           ]]>
         </content:encoded>

@@ -47,8 +47,12 @@ layout: page
 
     <p class="mbxxs bold">For more <em>{{ podcast.title }}</em>:</p>
     <ul class="mbs" style="padding-left: 1.25rem;">
-      <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
-      <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+      {% if podcast.url-itunes %}
+        <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
+      {% endif %}
+      {% if podcast.url-rss %}
+        <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+      {% endif %}
       <li><a href="{{ podcast.url-web }}">View podcast website</a></li>
     </ul>
 

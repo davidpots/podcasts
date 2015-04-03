@@ -15,6 +15,14 @@ permalink: /shows/
   <div class="item mbxxxl" data-tags="{{ podcast.tags | join: ' ' }}" style="background: url({{ podcast.url-thumbnail }}) no-repeat; background-size: 60px; padding-left: 76px;">
     <h2 class="mbxxs">{{ podcast.title }}</h2>
     <p class="mbxxs">{{ podcast.description }}</p>
-    <p class="mbxxs"><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>
+    <p class="mbxxs">
+      {% if podcast.url-itunes %}
+        <a href="{{ podcast.url-itunes }}">iTunes</a>&nbsp;|&nbsp;
+      {% endif %}
+      {% if podcast.url-rss %}
+        <a href="{{ podcast.url-rss }}">RSS</a>&nbsp;|&nbsp;
+      {% endif %}
+      <a href="{{ podcast.url-web }}">Website</a>
+    </p>
   </div>
 {% endfor %}
