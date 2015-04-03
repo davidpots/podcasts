@@ -1,6 +1,6 @@
 ---
 title:         "This Week in Startups"
-description:   "Supporting entrepreneurs & inspiring innovation."
+description:   "Supporting entrepreneurs &amp; inspiring innovation."
 url-thumbnail: "http://www.thisweekin.com/featured/FeatureBox_Startups.jpg"
 url-rss:       "http://feeds.feedburner.com/twist-audio"
 url-web:       "http://thisweekinstartups.com/"
