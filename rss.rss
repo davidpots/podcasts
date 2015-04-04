@@ -75,7 +75,7 @@ layout: null
             <p><em>As heard on <a href="{{ podcast.url-web }}">{{ podcast.title }}</a></em>.</p>
             <p><strong>Episode notes from Pots:</strong></p>
             <ul>
-              <li>{{ episode. }}</li>
+              <li>{{ episode.summary | xml_escape}}</li>
             </ul>
             {% if episode.timestamps %}
               <p><strong>Episode highlights:</strong></p>
