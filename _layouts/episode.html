@@ -10,50 +10,47 @@ layout: page
   {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
   {% assign podcast = podcast_data | first %}
 
-  <div style="margin-bottom: 12rem;">
-    <p class="center mbs">
-      <img src="{{ podcast.url-thumbnail }}" width="188" style="width: 188px; height: 188px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
-    </p>
-    <h2 class="h1 center mbs">
-      {{ episode.title }}
-    </h2>
-    <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
+  <p class="center mbs">
+    <img src="{{ podcast.url-thumbnail }}" width="188" style="width: 188px; height: 188px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
+  </p>
+  <h2 class="h1 center mbs">
+    {{ episode.title }}
+  </h2>
+  <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
 
-    <p class="center">
-      <audio controls preload="metadata">
-        <source src="{{ episode.url-audio }}" type="audio/mpeg">
-      </audio>
-    </p>
+  <p class="center">
+    <audio controls preload="metadata">
+      <source src="{{ episode.url-audio }}" type="audio/mpeg">
+    </audio>
+  </p>
 
-    <p class="mbxxs bold">Episode summary from Pots:</p>
-    <p class="mbs">{{ episode.summary }}</p>
+  <p class="mbxxs bold">Episode summary from Pots:</p>
+  <p class="mbs">{{ episode.summary }}</p>
 
-    {% if episode.timestamps %}
-      <p class="mbxxs bold">Episode highlights:</p>
-      <ul class="mbs" style="padding-left: 1.25rem;">
-      {% for timestamp in episode.timestamps %}
-        <li>
-          <em><a href="#t={{ timestamp.time }}">{{ timestamp.time }}</a></em> – {{ timestamp.notes }}
-        </li>
-      {% endfor %}
-      </ul>
+  {% if episode.timestamps %}
+    <p class="mbxxs bold">Episode highlights:</p>
+    <ul class="mbs" style="padding-left: 1.25rem;">
+    {% for timestamp in episode.timestamps %}
+      <li>
+        <em><a href="#t={{ timestamp.time }}">{{ timestamp.time }}</a></em> – {{ timestamp.notes }}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p class="mbxxs bold">Episode links:</p>
+  <ul class="mbs" style="padding-left: 1.25rem;">
+    <li><a href="{{ episode.url-audio }}">Download MP3</a></li>
+    <li><a href="{{ episode.url-web }}">Episode website</a></li>
+  </ul>
+
+  <p class="mbxxs bold">For more <em>{{ podcast.title }}</em>:</p>
+  <ul class="mbs" style="padding-left: 1.25rem;">
+    {% if podcast.url-itunes %}
+      <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
     {% endif %}
-
-    <p class="mbxxs bold">Episode links:</p>
-    <ul class="mbs" style="padding-left: 1.25rem;">
-      <li><a href="{{ episode.url-audio }}">Download MP3</a></li>
-      <li><a href="{{ episode.url-web }}">Episode website</a></li>
-    </ul>
-
-    <p class="mbxxs bold">For more <em>{{ podcast.title }}</em>:</p>
-    <ul class="mbs" style="padding-left: 1.25rem;">
-      {% if podcast.url-itunes %}
-        <li><a href="{{ podcast.url-itunes }}">Subscribe via iTunes</a></li>
-      {% endif %}
-      {% if podcast.url-rss %}
-        <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
-      {% endif %}
-      <li><a href="{{ podcast.url-web }}">View podcast website</a></li>
-    </ul>
-
-  </div>
+    {% if podcast.url-rss %}
+      <li><a href="{{ podcast.url-rss }}">Subscribe via RSS</a></li>
+    {% endif %}
+    <li><a href="{{ podcast.url-web }}">View podcast website</a></li>
+  </ul>
