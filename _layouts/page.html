@@ -21,36 +21,10 @@
 
     <section class="bg--gray-lightest pvxl">
       <div class="container--col-6">
-        <p class="h3"><strong class="block">Looking for more of my recommendations?</strong>Here are the latest episodes I suggest listening to. You can subscribe to this feed of episodes using the <a href="{{ site.baseurl }}/rss.rss">RSS feed</a>.</p>
-        
-        {% for episode in site.episodes reversed %}
-
-          {% assign podcast_data = site.podcasts | where:"title", episode.podcast %}
-          {% assign podcast = podcast_data | first %}
-
-          <div class="mbm clearfix">
-            <img class="left mrs" src="{{ podcast.url-thumbnail }}" style="width: 60px; height: 60px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
-            <p class="bold mbxxs mtxs"><a href="{{ episode.url }}">{{ episode.title }}</a></p>
-            <p class="small mbn">from <em>{{ podcast.title }}</em></p>
-          </div>
-
-        {% endfor %}
-
-
-
-
-
-
-
+        <p class="h3"><strong class="block">Looking for more of my recommendations? </strong>Check out my <a href="/">main feed</a> of recommended episodes! I usually put up a few a week. You can subscribe to this feed of episodes using the <a href="{{ site.baseurl }}/rss.rss">RSS feed</a>.</p>
       </div>
     </section>
-
-    <section class="masthead pvm">
-      <div class="container--col-6">
-        <p class="color--white man strong"><a class="color--white" href="/">&larr; Pots Podcast Picks</a></p>
-      </div>
-    </section>
-
+    
   </body>
 
 </html>
