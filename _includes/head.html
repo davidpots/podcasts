@@ -6,7 +6,6 @@
   <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:image" content="{% if page.url-thumbnail %}{{ page.url-thumbnail }}{% endif %}" />
   <meta property="og:type" content="website" />
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
