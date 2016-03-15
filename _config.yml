@@ -2,7 +2,7 @@
 title: Podcast recommendations from @davidpots
 email: davidpots@gmail.com
 description: A curated mixtape of recommended podcast episodes. Maintained by David Potsiadlo.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/podcasts/" # the subpath of your site, e.g. /blog/
 url: "http://www.davidpots.com/podcasts" # the base hostname & protocol for your site
 twitter_username: davidpots
 github_username:  davidpots
