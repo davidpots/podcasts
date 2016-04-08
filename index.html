@@ -15,7 +15,7 @@ title: Pots Podcast Picks
       <img src="{{ podcast.url-thumbnail }}" width="188" style="width: 188px; height: 188px; background: #eee; border: 1px solid white; box-shadow: 0px 1px 12px rgba(0,0,0,0.2)" />
     </p>
     <h2 class="h1 center mbs">
-      <a class="font-color--strong" href="{{ episode.url }}">{{ episode.title }}</a>
+      <a class="font-color--strong" href="{{ episode.url | prepend: site.baseurl }}">{{ episode.title }}</a>
     </h2>
     <p class="center mbl weak">from <a class="weak underline" href="{{podcast.url-web}}">{{ podcast.title }}</a> on {{ episode.date | date: '%B %e, %Y' }}</p>
 
